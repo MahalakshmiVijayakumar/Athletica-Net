@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/future.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Future</title>
+    <style>
+        .box {
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <h1>Do you Really want to Know?</h1>
+            <button id="target">No</button>
+            <button id="yes">Yes</button>
+        </div>
+    </div>
+<script>
+    const target = document.getElementById('target');
+    const yes = document.getElementById('yes');
+    const container = document.getElementById('container');
+
+    yes.addEventListener('click', () => {
+        container.innerHTML = ''; // Clear the container
+
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+
+        const image1 = document.createElement('img');
+        image1.src = 'images/mm.jpg'; // Replace with the path to your first image
+        image1.alt = 'Mahalakshmi Vijayakumar';
+        imageContainer.appendChild(image1);
+
+        // Add the name
+        const name = document.createElement('p');
+        name.textContent = 'Mahalakshmi Vijayakumar';
+        imageContainer.appendChild(name);
+
+        container.appendChild(imageContainer);
+
+        setTimeout(() => {
+            const image2 = document.createElement('img');
+            image2.src = 'images/f1.jpg'; // Replace with the path to your second image
+            image2.alt = 'Medals';
+            container.appendChild(image2);
+        }, 2000); // Delay the addition of the second image by 2 seconds
+
+        // Use setTimeout to delay the addition of the content
+        setTimeout(() => {
+            const content = document.createElement('p');
+            content.textContent = 'Mahalakshmi Vijayakumar, who excelled in multiple sports and cultural events at Mailam Engineering College, Mailam, and in her schoolings too which showcasing her versatility and dedication beyond athletics. She won the first prize in the 4x100m Relay and second prize in the 100m race, showcasing her speed and agility. She also contributed to team successes, winning the third prize in the 4x400m Relay at Anna University Zone Level competition and the third prize in Long Jump, showcasing her ability to work collaboratively and achieve success together. These achievements demonstrate their passion for sports, commitment to excellence, and valuable lessons about teamwork, perseverance, and determination. In the future, you might get the chance to see her representing Indian athletes.';
+            container.appendChild(content);
+        }, 4000); // Delay the content addition by 4 seconds
+
+        target.style.display = 'block'; // Show the target button
+        moveTarget(); // Move the target button back to its original position
+    });
+
+    function moveTarget() {
+        const maxWidth = container.clientWidth - target.clientWidth;
+        const maxHeight = container.clientHeight - target.clientHeight;
+        const randomX = Math.floor(Math.random() * maxWidth);
+        const randomY = Math.floor(Math.random() * maxHeight);
+        
+        target.style.left = randomX + 'px';
+        target.style.top = randomY + 'px';
+    }
+
+    target.addEventListener('mouseenter', function(){
+        moveTarget();
+    });
+
+    target.addEventListener('click', function() {
+        moveTarget();
+    });
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/future.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Future</title>
+    <style>
+        .box {
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">
+            <h1>Do you Really want to Know?</h1>
+            <button id="target">No</button>
+            <button id="yes">Yes</button>
+        </div>
+    </div>
+<script>
+    const target = document.getElementById('target');
+    const yes = document.getElementById('yes');
+    const container = document.getElementById('container');
+
+    yes.addEventListener('click', () => {
+        container.innerHTML = ''; // Clear the container
+
+        // Create a container for the first image and name
+        const imageContainer1 = document.createElement('div');
+        imageContainer1.classList.add('image-container');
+
+        const image1 = document.createElement('img');
+        image1.src = 'images/mm.jpg'; // Replace with the path to your first image
+        image1.alt = 'Mahalakshmi Vijayakumar';
+        imageContainer1.appendChild(image1);
+
+        container.appendChild(imageContainer1);
+
+        // Add the name with a delay
+        setTimeout(() => {
+            const name = document.createElement('p');
+            name.textContent = 'Mahalakshmi Vijayakumar';
+            imageContainer1.appendChild(name);
+        }, 1000); // Delay the addition of the name by 2 seconds
+
+        // setTimeout(() => {
+        //     const image2 = document.createElement('img');
+        //     image2.src = 'images/f1.jpg';
+        //     image2.alt = 'Medals';
+        //     imageContainer2.appendChild(image2);
+        // }, 3000);
+
+        // Add the content with a delay
+        setTimeout(() => {
+            const content = document.createElement('p');
+            content.textContent = 'Mahalakshmi Vijayakumar, who excelled in multiple sports and cultural events at Mailam Engineering College, Mailam, and in her schoolings too which showcasing her versatility and dedication beyond athletics. She won the first prize in the 4x100m Relay and second prize in the 100m race, showcasing her speed and agility. She also contributed to team successes, winning the third prize in the 4x400m Relay at Anna University Zone Level competition and the third prize in Long Jump, showcasing her ability to work collaboratively and achieve success together. These achievements demonstrate their passion for sports, commitment to excellence, and valuable lessons about teamwork, perseverance, and determination. In the future, you might get the chance to see her representing Indian athletes.';
+            container.appendChild(content);
+        }, 4000); // Delay the addition of the content by 4 seconds
+
+        target.style.display = 'block'; // Show the target button
+        moveTarget(); // Move the target button back to its original position
+    });
+
+    function moveTarget() {
+        const maxWidth = container.clientWidth - target.clientWidth;
+        const maxHeight = container.clientHeight - target.clientHeight;
+        const randomX = Math.floor(Math.random() * maxWidth);
+        const randomY = Math.floor(Math.random() * maxHeight);
+        
+        target.style.left = randomX + 'px';
+        target.style.top = randomY + 'px';
+    }
+
+    target.addEventListener('mouseenter', function(){
+        moveTarget();
+    });
+
+    target.addEventListener('click', function() {
+        moveTarget();
+    });
+</script>
+</body>
+</html>

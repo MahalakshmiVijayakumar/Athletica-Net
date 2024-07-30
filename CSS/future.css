@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DF2E38;
+    margin: 0;
+    overflow: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#yes{
+    position: absolute;
+    left: 100px;
+    background-color: rgb(225, 0, 0);
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* animation: fadeIn 2s forwards;
+    opacity: 0;
+    float: left; */
+}
+#target{
+    position: absolute;
+    left: 200px;
+    background-color: rgb(0, 89, 225);
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: white;
+}
+p{
+    /* clear: both; */
+    margin-top: 30px;
+    text-align: justify;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 2s;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    animation-delay: 0.2s;
+}
+
+/* .name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 20px; /* Adjust margin as needed */
+    /* animation-name: inherit;
+} */ 
+ .image-container img{
+    margin-right: 30px;
+ }
